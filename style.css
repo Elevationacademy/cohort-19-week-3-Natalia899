@@ -1,0 +1,31 @@
+.boxes {
+    height: 50px;
+    width: 50px;
+    border: black solid 2px;
+    display: inline-block;
+    
+
+}
+#container {
+    
+    margin-top: 80px;
+}
+.boxes {
+    border: black solid 2px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+#form {
+    width: 450px;
+    height: 600px;
+    background-color: mediumaquamarine;
+    border: solid 4px rgb(127, 168, 255);
+    padding-top: 100px;
+    padding-left: 30px;
+}
+input {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 10px
+}

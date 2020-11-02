@@ -8,7 +8,28 @@
 </head>
 
 <body>
-    
+  <!--- <div id='check'>
+      <label for="name">Your name:</label>
+      <input id ='name' name = 'name' type='text' placeholder="Who are you?">
+      <button type="button" onclick=checkReservation() >Check reservation</button>
+    </div>
+    <div id='container'>
+        
+    </div>  -->
+    <div id='form'>
+      <label for="name" class=>Name:</label><br>
+      <input id ='name' name = 'name' type='text' > <br>
+      <label for="salary">Desired salary:</label><br>
+      <input id ='salary' name = 'salary' type='number' min = '10000' max = '16000' >
+      <label for="birthday">Birthday:</label>
+      <input id ='birthday' name = 'birthday' type='date' > <br>
+      <label for="phone">Phone:</label><br>
+      <input id ='phone' name = 'phone' type='number' maxlength="10" minlength="10"> <br>
+      <button type="button" onclick = validate()>Submit</button>
+
+    </div>
+
+
     <script src="main.js"></script>
 </body>
 
