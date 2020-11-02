@@ -30,36 +30,23 @@ const checkReservation = function() {
 }
  
 //Visual Overload
-const container = document.getElementById('container')
-const getRandomColor = function() {
-    const niceColors = ["#8e44ad", "#3498db", "#c0392b", "#f1c40f", "#d35400", "#2ecc71", "#1abc9c", "#2c3e50", "#7f8c8d"]
-    
+const getRandomColor = function () {
+    const niceColors = ['#8e44ad', '#3498db', '#c0392b', '#f1c40f', '#d35400', '#2ecc71', '#1abc9c', '#2c3e50', '#7f8c8d'];
     const randomPosition = Math.floor(Math.random() * niceColors.length);
     return niceColors[randomPosition];
+  };
+  
+  
+  for (let i = 1; i < 8; i++) {
+    const newBox = document.createElement('div');
+    newBox.setAttribute('class', 'box');
+    newBox.style.backgroundColor = getRandomColor();
+    newBox.onmouseenter = function () {
+      const randomColor = getRandomColor();
+      newBox.style.backgroundColor = randomColor;
+    };
+    document.getElementById('container').appendChild(newBox);
   }
-
-
-const createBoxes = function () {
-    let box = []
-    for (i=0; i<6; i++) {
-        box[i] = document.createElement('div')
-        box[i].className = 'boxes'
-        box[i].style.backgroundColor = getRandomColor()
-       
-        
-        container.appendChild(box[i])
-
-        
-    
-        
-        }
-        
-}
-createBoxes()
-const box = document.getElementsByClassName('boxes')
-box.onmouseover = function (){
-    this.style.backgroundColor = getRandomColor()
-} 
 
 //form
 const form = document.getElementById('form')
@@ -74,7 +61,8 @@ const validate = function() {
     } else if (document.getElementById('salary').value > 16000 || document.getElementById('salary').value < 10000 ) {
         const wrongSalary = document.createElement('p')
         wrongSalary.innerHTML = 'Salary must be greater than 10,000 but less than 16,000'
-        wrongSalary.style.color = 'red'
+        wrongSal
+        ary.style.color = 'red'
         form.appendChild(wrongSalary)
     } /*else if (document.getElementById('birthaday').value == null ) {
         const wrongDate = document.createElement('p')

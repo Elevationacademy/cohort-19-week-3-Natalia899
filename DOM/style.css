@@ -9,6 +9,7 @@
 #container {
     
     margin-top: 80px;
+    display: flex;
 }
 .boxes {
     border: black solid 2px;
