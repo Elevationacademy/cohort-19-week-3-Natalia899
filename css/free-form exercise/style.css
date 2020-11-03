@@ -13,6 +13,8 @@
     "f f f f f f f f f"; 
     background-color: rgb(250, 249, 249);
     grid-gap: 10px;
+    min-width: 90%;
+    
 }
     .head-nav{
         grid-area: h;
@@ -56,16 +58,22 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5px;
         
+       
     }
     .main-item {
         border: 2px solid  rgb(85, 91, 110);
         padding: 10px;
         margin-block-start: 1em;
         font-size: small;
+        max-height: fit-content;
+      
+       
+      
         
     }
     .par{
         font-weight: bold;
+        
     }
     
     .foot{
